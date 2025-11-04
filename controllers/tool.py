@@ -55,10 +55,11 @@ def selection_par_rang(population: list[Graphe], taille_selection: int):
 
 
 # Croisement
-def OX(parent1: Graphe, parent2: Graphe) -> Graphe:
-    def graphe_to_list(graphe: Graphe):
-        villes = []
-        current = graphe
+def order_crossover(parent1: Graphe, parent2: Graphe) -> Graphe:
+    """Croisement OX (Order Crossover) entre deux parents."""
+    
+    def graphe_to_list(graphe: Graphe) -> list:
+        villes, current = [], graphe
         while True:
             villes.append(current.ville)
             current = current.next
@@ -66,34 +67,34 @@ def OX(parent1: Graphe, parent2: Graphe) -> Graphe:
                 break
         return villes
 
+    def remplir_enfant(base, source, start_index):
+        taille = len(base)
+        index = start_index
+        for ville in source:
+            if ville not in base:
+                if index >= taille:
+                    index = 1  # sauter la première ville
+                base[index] = ville
+                index += 1
+        return base
+
     liste1 = graphe_to_list(parent1)
     liste2 = graphe_to_list(parent2)
     taille = len(liste1)
-    debut, fin = sorted(random.sample(range(1, taille), 2))  # Éviter la première ville
+    debut, fin = sorted(random.sample(range(1, taille), 2))
 
     enfant = [None] * taille
     enfant[0] = liste1[0]
     enfant[debut:fin] = liste1[debut:fin]
+    enfant = remplir_enfant(enfant, liste2, fin)
 
-    current_index = fin
-    for ville in liste2:
-        if ville not in enfant:
-            if current_index >= taille:
-                current_index = 1  # Revenir au début en évitant la première ville
-            enfant[current_index] = ville
-            current_index += 1
-    for i in range(taille):
-        if enfant[i] is None:
-            for ville in liste2:
-                if ville not in enfant:
-                    enfant[i] = ville
-                    break
     return create_graphe(enfant)
 
-def CX(parent1: Graphe, parent2: Graphe) -> Graphe:
+def cycle_crossover(parent1: Graphe, parent2: Graphe) -> Graphe:
+    """Croisement CX (Cycle Crossover)."""
+    
     def graphe_to_list(graphe: Graphe):
-        villes = []
-        current = graphe
+        villes, current = [], graphe
         while True:
             villes.append(current.ville)
             current = current.next
@@ -106,37 +107,41 @@ def CX(parent1: Graphe, parent2: Graphe) -> Graphe:
     taille = len(liste1)
     enfant = [None] * taille
     enfant[0] = liste1[0]
-    villes_ajoutees = {liste1[0]}
 
+    villes_ajoutees = {liste1[0]}
     index = 1
+
     while None in enfant:
-        if liste1[index] not in villes_ajoutees:
-            enfant[index] = liste1[index]
-            villes_ajoutees.add(liste1[index])
-        elif liste2[index] not in villes_ajoutees:
-            enfant[index] = liste2[index]
-            villes_ajoutees.add(liste2[index])
-        index += 1
-        if index >= taille:
-            index = 1
-    for i in range(taille):
-        if enfant[i] is None:
-            for ville in liste2:
-                if ville not in enfant:
-                    enfant[i] = ville
-                    break
+        for ville1, ville2 in zip(liste1[index:], liste2[index:]):
+            if ville1 not in villes_ajoutees:
+                enfant[index] = ville1
+                villes_ajoutees.add(ville1)
+            elif ville2 not in villes_ajoutees:
+                enfant[index] = ville2
+                villes_ajoutees.add(ville2)
+            index += 1
+            if index >= taille:
+                index = 1
+                break
+
     return create_graphe(enfant)
 
-def PMX(parent1: Graphe, parent2: Graphe) -> Graphe:
+def partially_mapped_crossover(parent1: Graphe, parent2: Graphe) -> Graphe:
+    """Croisement PMX (Partially Mapped Crossover)."""
+
     def graphe_to_list(graphe: Graphe):
-        villes = []
-        current = graphe
+        villes, current = [], graphe
         while True:
             villes.append(current.ville)
             current = current.next
             if current == graphe:
                 break
         return villes
+
+    def appliquer_mapping(mapping, ville):
+        while ville in mapping:
+            ville = mapping[ville]
+        return ville
 
     liste1 = graphe_to_list(parent1)
     liste2 = graphe_to_list(parent2)
@@ -147,23 +152,17 @@ def PMX(parent1: Graphe, parent2: Graphe) -> Graphe:
     enfant[0] = liste1[0]
     enfant[debut:fin] = liste1[debut:fin]
 
-    mapping = {}
-    for i in range(debut, fin):
-        mapping[liste2[i]] = liste1[i]
+    mapping = {liste2[i]: liste1[i] for i in range(debut, fin)}
 
     for i in range(1, taille):
         if debut <= i < fin:
             continue
-        ville = liste2[i]
-        while ville in mapping:
-            ville = mapping[ville]
-        enfant[i] = ville
+        enfant[i] = appliquer_mapping(mapping, liste2[i])
+
     for i in range(taille):
         if enfant[i] is None:
-            for ville in liste2:
-                if ville not in enfant:
-                    enfant[i] = ville
-                    break
+            enfant[i] = next(v for v in liste2 if v not in enfant)
+
     return create_graphe(enfant)
 
 # Mutation
