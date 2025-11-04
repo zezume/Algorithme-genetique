@@ -1,0 +1,25 @@
+{
+  "villes": [
+    {"id": 0, "nom": "Paris", "coordonnees": {"latitude": 48.8566, "longitude": 2.3522}},
+    {"id": 1, "nom": "Marseille", "coordonnees": {"latitude": 43.2965, "longitude": 5.3698}},
+    {"id": 2, "nom": "Lyon", "coordonnees": {"latitude": 45.7640, "longitude": 4.8357}},
+    {"id": 3, "nom": "Toulouse", "coordonnees": {"latitude": 43.6047, "longitude": 1.4442}},
+    {"id": 4, "nom": "Nice", "coordonnees": {"latitude": 43.7102, "longitude": 7.2620}},
+    {"id": 5, "nom": "Nantes", "coordonnees": {"latitude": 47.2184, "longitude": -1.5536}},
+    {"id": 6, "nom": "Strasbourg", "coordonnees": {"latitude": 48.5734, "longitude": 7.7521}},
+    {"id": 7, "nom": "Montpellier", "coordonnees": {"latitude": 43.6119, "longitude": 3.8777}},
+    {"id": 8, "nom": "Bordeaux", "coordonnees": {"latitude": 44.8378, "longitude": -0.5792}},
+    {"id": 9, "nom": "Lille", "coordonnees": {"latitude": 50.6292, "longitude": 3.0573}},
+    {"id": 10, "nom": "Rennes", "coordonnees": {"latitude": 48.1173, "longitude": -1.6778}},
+    {"id": 11, "nom": "Reims", "coordonnees": {"latitude": 49.2583, "longitude": 4.0317}},
+    {"id": 12, "nom": "Le Havre", "coordonnees": {"latitude": 49.4944, "longitude": 0.1079}},
+    {"id": 13, "nom": "Saint-Étienne", "coordonnees": {"latitude": 45.4397, "longitude": 4.3872}},
+    {"id": 14, "nom": "Toulon", "coordonnees": {"latitude": 43.1242, "longitude": 5.9280}},
+    {"id": 15, "nom": "Grenoble", "coordonnees": {"latitude": 45.1885, "longitude": 5.7245}},
+    {"id": 16, "nom": "Dijon", "coordonnees": {"latitude": 47.3220, "longitude": 5.0415}},
+    {"id": 17, "nom": "Angers", "coordonnees": {"latitude": 47.4784, "longitude": -0.5632}},
+    {"id": 18, "nom": "Nîmes", "coordonnees": {"latitude": 43.8367, "longitude": 4.3601}},
+    {"id": 19, "nom": "Clermont-Ferrand", "coordonnees": {"latitude": 45.7772, "longitude": 3.0870}}
+  ]}
+
+

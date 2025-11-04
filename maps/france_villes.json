@@ -1,0 +1,1052 @@
+{
+  "villes": [
+    {
+      "id": 1,
+      "nom": "Paris",
+      "coordonnees": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      }
+    },
+    {
+      "id": 2,
+      "nom": "Marseille",
+      "coordonnees": {
+        "latitude": 43.2965,
+        "longitude": 5.3698
+      }
+    },
+    {
+      "id": 3,
+      "nom": "Lyon",
+      "coordonnees": {
+        "latitude": 45.7640,
+        "longitude": 4.8357
+      }
+    },
+    {
+      "id": 4,
+      "nom": "Toulouse",
+      "coordonnees": {
+        "latitude": 43.6047,
+        "longitude": 1.4442
+      }
+    },
+    {
+      "id": 5,
+      "nom": "Nice",
+      "coordonnees": {
+        "latitude": 43.7102,
+        "longitude": 7.2620
+      }
+    },
+    {
+      "id": 6,
+      "nom": "Nantes",
+      "coordonnees": {
+        "latitude": 47.2184,
+        "longitude": -1.5536
+      }
+    },
+    {
+      "id": 7,
+      "nom": "Strasbourg",
+      "coordonnees": {
+        "latitude": 48.5734,
+        "longitude": 7.7521
+      }
+    },
+    {
+      "id": 8,
+      "nom": "Montpellier",
+      "coordonnees": {
+        "latitude": 43.6119,
+        "longitude": 3.8777
+      }
+    },
+    {
+      "id": 9,
+      "nom": "Bordeaux",
+      "coordonnees": {
+        "latitude": 44.8378,
+        "longitude": -0.5792
+      }
+    },
+    {
+      "id": 10,
+      "nom": "Lille",
+      "coordonnees": {
+        "latitude": 50.6292,
+        "longitude": 3.0573
+      }
+    },
+    {
+      "id": 11,
+      "nom": "Rennes",
+      "coordonnees": {
+        "latitude": 48.1173,
+        "longitude": -1.6778
+      }
+    },
+    {
+      "id": 12,
+      "nom": "Reims",
+      "coordonnees": {
+        "latitude": 49.2583,
+        "longitude": 4.0317
+      }
+    },
+    {
+      "id": 13,
+      "nom": "Le Havre",
+      "coordonnees": {
+        "latitude": 49.4944,
+        "longitude": 0.1079
+      }
+    },
+    {
+      "id": 14,
+      "nom": "Saint-Étienne",
+      "coordonnees": {
+        "latitude": 45.4397,
+        "longitude": 4.3872
+      }
+    },
+    {
+      "id": 15,
+      "nom": "Toulon",
+      "coordonnees": {
+        "latitude": 43.1242,
+        "longitude": 5.9280
+      }
+    },
+    {
+      "id": 16,
+      "nom": "Grenoble",
+      "coordonnees": {
+        "latitude": 45.1885,
+        "longitude": 5.7245
+      }
+    },
+    {
+      "id": 17,
+      "nom": "Dijon",
+      "coordonnees": {
+        "latitude": 47.3220,
+        "longitude": 5.0415
+      }
+    },
+    {
+      "id": 18,
+      "nom": "Angers",
+      "coordonnees": {
+        "latitude": 47.4784,
+        "longitude": -0.5632
+      }
+    },
+    {
+      "id": 19,
+      "nom": "Nîmes",
+      "coordonnees": {
+        "latitude": 43.8367,
+        "longitude": 4.3601
+      }
+    },
+    {
+      "id": 20,
+      "nom": "Clermont-Ferrand",
+      "coordonnees": {
+        "latitude": 45.7772,
+        "longitude": 3.0870
+      }
+    },
+    {
+      "id": 21,
+      "nom": "Le Mans",
+      "coordonnees": {
+        "latitude": 48.0061,
+        "longitude": 0.1996
+      }
+    },
+    {
+      "id": 22,
+      "nom": "Aix-en-Provence",
+      "coordonnees": {
+        "latitude": 43.5297,
+        "longitude": 5.4474
+      }
+    },
+    {
+      "id": 23,
+      "nom": "Brest",
+      "coordonnees": {
+        "latitude": 48.3904,
+        "longitude": -4.4861
+      }
+    },
+    {
+      "id": 24,
+      "nom": "Limoges",
+      "coordonnees": {
+        "latitude": 45.8336,
+        "longitude": 1.2611
+      }
+    },
+    {
+      "id": 25,
+      "nom": "Tours",
+      "coordonnees": {
+        "latitude": 47.3941,
+        "longitude": 0.6848
+      }
+    },
+    {
+      "id": 26,
+      "nom": "Amiens",
+      "coordonnees": {
+        "latitude": 49.8941,
+        "longitude": 2.2958
+      }
+    },
+    {
+      "id": 27,
+      "nom": "Perpignan",
+      "coordonnees": {
+        "latitude": 42.6887,
+        "longitude": 2.8948
+      }
+    },
+    {
+      "id": 28,
+      "nom": "Metz",
+      "coordonnees": {
+        "latitude": 49.1193,
+        "longitude": 6.1757
+      }
+    },
+    {
+      "id": 29,
+      "nom": "Besançon",
+      "coordonnees": {
+        "latitude": 47.2378,
+        "longitude": 6.0241
+      }
+    },
+    {
+      "id": 30,
+      "nom": "Orléans",
+      "coordonnees": {
+        "latitude": 47.9029,
+        "longitude": 1.9093
+      }
+    },
+    {
+      "id": 31,
+      "nom": "Mulhouse",
+      "coordonnees": {
+        "latitude": 47.7508,
+        "longitude": 7.3359
+      }
+    },
+    {
+      "id": 32,
+      "nom": "Rouen",
+      "coordonnees": {
+        "latitude": 49.4419,
+        "longitude": 1.0930
+      }
+    },
+    {
+      "id": 33,
+      "nom": "Caen",
+      "coordonnees": {
+        "latitude": 49.1829,
+        "longitude": -0.3700
+      }
+    },
+    {
+      "id": 34,
+      "nom": "Nancy",
+      "coordonnees": {
+        "latitude": 48.6921,
+        "longitude": 6.1844
+      }
+    },
+    {
+      "id": 35,
+      "nom": "Annecy",
+      "coordonnees": {
+        "latitude": 45.8992,
+        "longitude": 6.1294
+      }
+    },
+    {
+      "id": 36,
+      "nom": "Bourges",
+      "coordonnees": {
+        "latitude": 47.0810,
+        "longitude": 2.3988
+      }
+    },
+    {
+      "id": 37,
+      "nom": "La Rochelle",
+      "coordonnees": {
+        "latitude": 46.1667,
+        "longitude": -1.1500
+      }
+    },
+    {
+      "id": 38,
+      "nom": "Pau",
+      "coordonnees": {
+        "latitude": 43.2951,
+        "longitude": -0.3708
+      }
+    },
+    {
+      "id": 39,
+      "nom": "Antibes",
+      "coordonnees": {
+        "latitude": 43.5804,
+        "longitude": 7.1256
+      }
+    },
+    {
+      "id": 40,
+      "nom": "Cannes",
+      "coordonnees": {
+        "latitude": 43.5528,
+        "longitude": 7.0174
+      }
+    },
+    {
+      "id": 41,
+      "nom": "Avignon",
+      "coordonnees": {
+        "latitude": 43.9493,
+        "longitude": 4.8055
+      }
+    },
+    {
+      "id": 42,
+      "nom": "Valence",
+      "coordonnees": {
+        "latitude": 44.9333,
+        "longitude": 4.8924
+      }
+    },
+    {
+      "id": 43,
+      "nom": "Narbonne",
+      "coordonnees": {
+        "latitude": 43.1846,
+        "longitude": 3.0030
+      }
+    },
+    {
+      "id": 44,
+      "nom": "Béziers",
+      "coordonnees": {
+        "latitude": 43.3442,
+        "longitude": 3.2158
+      }
+    },
+    {
+      "id": 45,
+      "nom": "Lorient",
+      "coordonnees": {
+        "latitude": 47.7486,
+        "longitude": -3.3665
+      }
+    },
+    {
+      "id": 46,
+      "nom": "Cholet",
+      "coordonnees": {
+        "latitude": 47.0598,
+        "longitude": -0.8799
+      }
+    },
+    {
+      "id": 47,
+      "nom": "Albi",
+      "coordonnees": {
+        "latitude": 43.9289,
+        "longitude": 2.1436
+      }
+    },
+    {
+      "id": 48,
+      "nom": "Tarbes",
+      "coordonnees": {
+        "latitude": 43.2333,
+        "longitude": 0.0833
+      }
+    },
+    {
+      "id": 49,
+      "nom": "Ajaccio",
+      "coordonnees": {
+        "latitude": 41.9192,
+        "longitude": 8.7386
+      }
+    },
+    {
+      "id": 50,
+      "nom": "Bastia",
+      "coordonnees": {
+        "latitude": 42.6973,
+        "longitude": 9.4509
+      }
+    },
+    {
+      "id": 51,
+      "nom": "Calvi",
+      "coordonnees": {
+        "latitude": 42.5666,
+        "longitude": 8.7567
+      }
+    },
+    {
+      "id": 52,
+      "nom": "Gap",
+      "coordonnees": {
+        "latitude": 44.5592,
+        "longitude": 6.0799
+      }
+    },
+    {
+      "id": 53,
+      "nom": "Briançon",
+      "coordonnees": {
+        "latitude": 44.8995,
+        "longitude": 6.6427
+      }
+    },
+    {
+      "id": 54,
+      "nom": "Chambéry",
+      "coordonnees": {
+        "latitude": 45.5646,
+        "longitude": 5.9178
+      }
+    },
+    {
+      "id": 55,
+      "nom": "Albertville",
+      "coordonnees": {
+        "latitude": 45.6767,
+        "longitude": 6.3920
+      }
+    },
+    {
+      "id": 56,
+      "nom": "Mâcon",
+      "coordonnees": {
+        "latitude": 46.3069,
+        "longitude": 4.8289
+      }
+    },
+    {
+      "id": 57,
+      "nom": "Nevers",
+      "coordonnees": {
+        "latitude": 46.9896,
+        "longitude": 3.1628
+      }
+    },
+    {
+      "id": 58,
+      "nom": "Charleville-Mézières",
+      "coordonnees": {
+        "latitude": 49.7731,
+        "longitude": 4.7206
+      }
+    },
+    {
+      "id": 59,
+      "nom": "Sedan",
+      "coordonnees": {
+        "latitude": 49.7016,
+        "longitude": 4.9403
+      }
+    },
+    {
+      "id": 60,
+      "nom": "Châlons-en-Champagne",
+      "coordonnees": {
+        "latitude": 48.9562,
+        "longitude": 4.3639
+      }
+    },
+    {
+      "id": 61,
+      "nom": "Épernay",
+      "coordonnees": {
+        "latitude": 49.0420,
+        "longitude": 3.9596
+      }
+    },
+    {
+      "id": 62,
+      "nom": "Saint-Quentin",
+      "coordonnees": {
+        "latitude": 49.8489,
+        "longitude": 3.2876
+      }
+    },
+    {
+      "id": 63,
+      "nom": "Laon",
+      "coordonnees": {
+        "latitude": 49.5639,
+        "longitude": 3.6243
+      }
+    },
+    {
+      "id": 64,
+      "nom": "Soissons",
+      "coordonnees": {
+        "latitude": 49.3826,
+        "longitude": 3.3236
+      }
+    },
+    {
+      "id": 65,
+      "nom": "Beauvais",
+      "coordonnees": {
+        "latitude": 49.4333,
+        "longitude": 2.0833
+      }
+    },
+    {
+      "id": 66,
+      "nom": "Compiègne",
+      "coordonnees": {
+        "latitude": 49.4179,
+        "longitude": 2.8261
+      }
+    },
+    {
+      "id": 67,
+      "nom": "Senlis",
+      "coordonnees": {
+        "latitude": 49.2076,
+        "longitude": 2.5865
+      }
+    },
+    {
+      "id": 68,
+      "nom": "Versailles",
+      "coordonnees": {
+        "latitude": 48.8014,
+        "longitude": 2.1301
+      }
+    },
+    {
+      "id": 69,
+      "nom": "Nanterre",
+      "coordonnees": {
+        "latitude": 48.8924,
+        "longitude": 2.2060
+      }
+    },
+    {
+      "id": 70,
+      "nom": "Créteil",
+      "coordonnees": {
+        "latitude": 48.7904,
+        "longitude": 2.4556
+      }
+    },
+    {
+      "id": 71,
+      "nom": "Bobigny",
+      "coordonnees": {
+        "latitude": 48.9106,
+        "longitude": 2.4396
+      }
+    },
+    {
+      "id": 72,
+      "nom": "Évry",
+      "coordonnees": {
+        "latitude": 48.6267,
+        "longitude": 2.4292
+      }
+    },
+    {
+      "id": 73,
+      "nom": "Melun",
+      "coordonnees": {
+        "latitude": 48.5394,
+        "longitude": 2.6608
+      }
+    },
+    {
+      "id": 74,
+      "nom": "Meaux",
+      "coordonnees": {
+        "latitude": 48.9600,
+        "longitude": 2.8880
+      }
+    },
+    {
+      "id": 75,
+      "nom": "Fontainebleau",
+      "coordonnees": {
+        "latitude": 48.4029,
+        "longitude": 2.7003
+      }
+    },
+    {
+      "id": 76,
+      "nom": "Chartres",
+      "coordonnees": {
+        "latitude": 48.4469,
+        "longitude": 1.4890
+      }
+    },
+    {
+      "id": 77,
+      "nom": "Dreux",
+      "coordonnees": {
+        "latitude": 48.7363,
+        "longitude": 1.3662
+      }
+    },
+    {
+      "id": 78,
+      "nom": "Blois",
+      "coordonnees": {
+        "latitude": 47.5861,
+        "longitude": 1.3359
+      }
+    },
+    {
+      "id": 79,
+      "nom": "Châteauroux",
+      "coordonnees": {
+        "latitude": 46.8100,
+        "longitude": 1.6910
+      }
+    },
+    {
+      "id": 80,
+      "nom": "Poitiers",
+      "coordonnees": {
+        "latitude": 46.5802,
+        "longitude": 0.3404
+      }
+    },
+    {
+      "id": 81,
+      "nom": "Niort",
+      "coordonnees": {
+        "latitude": 46.3237,
+        "longitude": -0.4588
+      }
+    },
+    {
+      "id": 82,
+      "nom": "La Roche-sur-Yon",
+      "coordonnees": {
+        "latitude": 46.6706,
+        "longitude": -1.4264
+      }
+    },
+    {
+      "id": 83,
+      "nom": "Saint-Nazaire",
+      "coordonnees": {
+        "latitude": 47.2735,
+        "longitude": -2.2137
+      }
+    },
+    {
+      "id": 84,
+      "nom": "Vannes",
+      "coordonnees": {
+        "latitude": 47.6582,
+        "longitude": -2.7608
+      }
+    },
+    {
+      "id": 85,
+      "nom": "Saint-Brieuc",
+      "coordonnees": {
+        "latitude": 48.5146,
+        "longitude": -2.7656
+      }
+    },
+    {
+      "id": 86,
+      "nom": "Quimper",
+      "coordonnees": {
+        "latitude": 47.9961,
+        "longitude": -4.0966
+      }
+    },
+    {
+      "id": 87,
+      "nom": "Cherbourg",
+      "coordonnees": {
+        "latitude": 49.6337,
+        "longitude": -1.6221
+      }
+    },
+    {
+      "id": 88,
+      "nom": "Évreux",
+      "coordonnees": {
+        "latitude": 49.0241,
+        "longitude": 1.1508
+      }
+    },
+    {
+      "id": 89,
+      "nom": "Dieppe",
+      "coordonnees": {
+        "latitude": 49.9229,
+        "longitude": 1.0771
+      }
+    },
+    {
+      "id": 90,
+      "nom": "Alençon",
+      "coordonnees": {
+        "latitude": 48.4310,
+        "longitude": 0.0931
+      }
+    },
+    {
+      "id": 91,
+      "nom": "Saint-Lô",
+      "coordonnees": {
+        "latitude": 49.1167,
+        "longitude": -1.0833
+      }
+    },
+    {
+      "id": 92,
+      "nom": "Vernon",
+      "coordonnees": {
+        "latitude": 49.0931,
+        "longitude": 1.4854
+      }
+    },
+    {
+      "id": 93,
+      "nom": "Auxerre",
+      "coordonnees": {
+        "latitude": 47.7982,
+        "longitude": 3.5730
+      }
+    },
+    {
+      "id": 94,
+      "nom": "Sens",
+      "coordonnees": {
+        "latitude": 48.1974,
+        "longitude": 3.2829
+      }
+    },
+    {
+      "id": 95,
+      "nom": "Troyes",
+      "coordonnees": {
+        "latitude": 48.2973,
+        "longitude": 4.0744
+      }
+    },
+    {
+      "id": 96,
+      "nom": "Chaumont",
+      "coordonnees": {
+        "latitude": 48.1110,
+        "longitude": 5.1403
+      }
+    },
+    {
+      "id": 97,
+      "nom": "Langres",
+      "coordonnees": {
+        "latitude": 47.8667,
+        "longitude": 5.3333
+      }
+    },
+    {
+      "id": 98,
+      "nom": "Vesoul",
+      "coordonnees": {
+        "latitude": 47.6267,
+        "longitude": 6.1556
+      }
+    },
+    {
+      "id": 99,
+      "nom": "Belfort",
+      "coordonnees": {
+        "latitude": 47.6396,
+        "longitude": 6.8638
+      }
+    },
+    {
+      "id": 100,
+      "nom": "Montbéliard",
+      "coordonnees": {
+        "latitude": 47.5106,
+        "longitude": 6.8000
+      }
+    },
+    {
+      "id": 101,
+      "nom": "Colmar",
+      "coordonnees": {
+        "latitude": 48.0790,
+        "longitude": 7.3585
+      }
+    },
+    {
+      "id": 102,
+      "nom": "Sélestat",
+      "coordonnees": {
+        "latitude": 48.2616,
+        "longitude": 7.4486
+      }
+    },
+    {
+      "id": 103,
+      "nom": "Saint-Dié-des-Vosges",
+      "coordonnees": {
+        "latitude": 48.2866,
+        "longitude": 6.9486
+      }
+    },
+    {
+      "id": 104,
+      "nom": "Épinal",
+      "coordonnees": {
+        "latitude": 48.1724,
+        "longitude": 6.4497
+      }
+    },
+    {
+      "id": 105,
+      "nom": "Remiremont",
+      "coordonnees": {
+        "latitude": 48.0175,
+        "longitude": 6.5858
+      }
+    },
+    {
+      "id": 106,
+      "nom": "Thionville",
+      "coordonnees": {
+        "latitude": 49.3583,
+        "longitude": 6.1667
+      }
+    },
+    {
+      "id": 107,
+      "nom": "Forbach",
+      "coordonnees": {
+        "latitude": 49.1856,
+        "longitude": 6.9000
+      }
+    },
+    {
+      "id": 108,
+      "nom": "Sarreguemines",
+      "coordonnees": {
+        "latitude": 49.1128,
+        "longitude": 7.0706
+      }
+    },
+    {
+      "id": 109,
+      "nom": "Verdun",
+      "coordonnees": {
+        "latitude": 49.1592,
+        "longitude": 5.3828
+      }
+    },
+    {
+      "id": 110,
+      "nom": "Longwy",
+      "coordonnees": {
+        "latitude": 49.5200,
+        "longitude": 5.7667
+      }
+    },
+    {
+      "id": 111,
+      "nom": "Arles",
+      "coordonnees": {
+        "latitude": 43.6766,
+        "longitude": 4.6278
+      }
+    },
+    {
+      "id": 112,
+      "nom": "Carcassonne",
+      "coordonnees": {
+        "latitude": 43.2130,
+        "longitude": 2.3510
+      }
+    },
+    {
+      "id": 113,
+      "nom": "Mende",
+      "coordonnees": {
+        "latitude": 44.5186,
+        "longitude": 3.5017
+      }
+    },
+    {
+      "id": 114,
+      "nom": "Rodez",
+      "coordonnees": {
+        "latitude": 44.3500,
+        "longitude": 2.5750
+      }
+    },
+    {
+      "id": 115,
+      "nom": "Aurillac",
+      "coordonnees": {
+        "latitude": 44.9262,
+        "longitude": 2.4400
+      }
+    },
+    {
+      "id": 116,
+      "nom": "Montauban",
+      "coordonnees": {
+        "latitude": 44.0170,
+        "longitude": 1.3540
+      }
+    },
+    {
+      "id": 117,
+      "nom": "Castres",
+      "coordonnees": {
+        "latitude": 43.6046,
+        "longitude": 2.2419
+      }
+    },
+    {
+      "id": 118,
+      "nom": "Foix",
+      "coordonnees": {
+        "latitude": 42.9633,
+        "longitude": 1.6078
+      }
+    },
+    {
+      "id": 119,
+      "nom": "Pamiers",
+      "coordonnees": {
+        "latitude": 43.1167,
+        "longitude": 1.6000
+      }
+    },
+    {
+      "id": 120,
+      "nom": "Auch",
+      "coordonnees": {
+        "latitude": 43.6453,
+        "longitude": 0.5889
+      }
+    },
+    {
+      "id": 121,
+      "nom": "Agen",
+      "coordonnees": {
+        "latitude": 44.2000,
+        "longitude": 0.6333
+      }
+    },
+    {
+      "id": 122,
+      "nom": "Marmande",
+      "coordonnees": {
+        "latitude": 44.5000,
+        "longitude": 0.1667
+      }
+    },
+    {
+      "id": 123,
+      "nom": "Bayonne",
+      "coordonnees": {
+        "latitude": 43.4931,
+        "longitude": -1.4760
+      }
+    },
+    {
+      "id": 124,
+      "nom": "Dax",
+      "coordonnees": {
+        "latitude": 43.7100,
+        "longitude": -1.0500
+      }
+    },
+    {
+      "id": 125,
+      "nom": "Mont-de-Marsan",
+      "coordonnees": {
+        "latitude": 43.8900,
+        "longitude": -0.5000
+      }
+    },
+    {
+      "id": 126,
+      "nom": "Angoulême",
+      "coordonnees": {
+        "latitude": 45.6500,
+        "longitude": 0.1500
+      }
+    },
+    {
+      "id": 127,
+      "nom": "Périgueux",
+      "coordonnees": {
+        "latitude": 45.1833,
+        "longitude": 0.7167
+      }
+    },
+    {
+      "id": 128,
+      "nom": "Brive-la-Gaillarde",
+      "coordonnees": {
+        "latitude": 45.1500,
+        "longitude": 1.5333
+      }
+    },
+    {
+      "id": 129,
+      "nom": "Guéret",
+      "coordonnees": {
+        "latitude": 46.1667,
+        "longitude": 1.8667
+      }
+    },
+    {
+      "id": 130,
+      "nom": "Saintes",
+      "coordonnees": {
+        "latitude": 45.7500,
+        "longitude": -0.6333
+      }
+    },
+    {
+      "id": 131,
+      "nom": "Rochefort",
+      "coordonnees": {
+        "latitude": 45.9500,
+        "longitude": -0.9667
+      }
+    }
+  ]
+}

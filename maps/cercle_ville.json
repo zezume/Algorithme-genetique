@@ -1,0 +1,25 @@
+{
+  "villes": [
+    { "id": 0, "nom": "Ville 1",  "coordonnees": { "latitude": 0.0,  "longitude": 1.0 } },
+    { "id": 1, "nom": "Ville 2",  "coordonnees": { "latitude": 0.31, "longitude": 0.95 } },
+    { "id": 2, "nom": "Ville 3",  "coordonnees": { "latitude": 0.59, "longitude": 0.81 } },
+    { "id": 3, "nom": "Ville 4",  "coordonnees": { "latitude": 0.81, "longitude": 0.59 } },
+    { "id": 4, "nom": "Ville 5",  "coordonnees": { "latitude": 0.95, "longitude": 0.31 } },
+    { "id": 5, "nom": "Ville 6",  "coordonnees": { "latitude": 1.0,  "longitude": 0.0 } },
+    { "id": 6, "nom": "Ville 7",  "coordonnees": { "latitude": 0.95, "longitude": -0.31 } },
+    { "id": 7, "nom": "Ville 8",  "coordonnees": { "latitude": 0.81, "longitude": -0.59 } },
+    { "id": 8, "nom": "Ville 9",  "coordonnees": { "latitude": 0.59, "longitude": -0.81 } },
+    { "id": 9, "nom": "Ville 10", "coordonnees": { "latitude": 0.31, "longitude": -0.95 } },
+    { "id": 10, "nom": "Ville 11","coordonnees": { "latitude": 0.0,  "longitude": -1.0 } },
+    { "id": 11, "nom": "Ville 12","coordonnees": { "latitude": -0.31,"longitude": -0.95 } },
+    { "id": 12, "nom": "Ville 13","coordonnees": { "latitude": -0.59,"longitude": -0.81 } },
+    { "id": 13, "nom": "Ville 14","coordonnees": { "latitude": -0.81,"longitude": -0.59 } },
+    { "id": 14, "nom": "Ville 15","coordonnees": { "latitude": -0.95,"longitude": -0.31 } },
+    { "id": 15, "nom": "Ville 16","coordonnees": { "latitude": -1.0, "longitude": 0.0 } },
+    { "id": 16, "nom": "Ville 17","coordonnees": { "latitude": -0.95,"longitude": 0.31 } },
+    { "id": 17, "nom": "Ville 18","coordonnees": { "latitude": -0.81,"longitude": 0.59 } },
+    { "id": 18, "nom": "Ville 19","coordonnees": { "latitude": -0.59,"longitude": 0.81 } },
+    { "id": 19, "nom": "Ville 20","coordonnees": { "latitude": -0.31,"longitude": 0.95 } }
+  ],
+  "chemin": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+}
