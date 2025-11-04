@@ -205,71 +205,71 @@ def selection_elites(population: list[Graphe], fitnesses: list[float], nb_elites
     elites = sorted(zip(population, fitnesses), key=lambda x: x[1])[:nb_elites]
     return [e[0] for e in elites]
 
-def evolution(
-    population: list[Graphe],
-    nb_generations: int,
-    taux_croisement: float,
-    taux_mutation: float,
-    nb_elites: int,
-    methode_croisement,
-    output_map_file: str = None,
-    show_plot_each_gen: bool = False
-) -> Graphe:
+def calculer_meilleur(population: list[Graphe], fitnesses: list[float]) -> tuple[Graphe, float, list[str]]:
+    """Retourne le meilleur graphe, sa fitness et son chemin."""
+    meilleur_index = fitnesses.index(min(fitnesses))
+    meilleur = population[meilleur_index]
+    chemin_ids, courant = [], meilleur
+    while True:
+        chemin_ids.append(str(courant.ville.id))
+        courant = courant.next
+        if courant == meilleur:
+            break
+    return meilleur, min(fitnesses), chemin_ids
+
+
+def afficher_statut_generation(generation: int, nb_generations: int, fitness: float, chemin: list[str], start_time: float):
+    current_time = time.time() - start_time
+    print(f"Génération {generation+1}/{nb_generations} | Meilleur: {fitness:.2f} | Temps: {current_time:.2f}s | Chemin: {' -> '.join(chemin)}")
+
+
+def generer_nouvelle_population(population, fitnesses, nb_elites, taux_croisement, taux_mutation, methode_croisement, taille_population):
+    """Génère une nouvelle population à partir de l'ancienne."""
+    nouvelle_population = selection_elites(population, fitnesses, nb_elites)
+    while len(nouvelle_population) < taille_population:
+        parent1 = selection_tournoi(population, fitnesses)
+        parent2 = selection_tournoi(population, fitnesses)
+
+        enfant1, enfant2 = (
+            methode_croisement(parent1, parent2),
+            methode_croisement(parent2, parent1)
+        ) if random.random() < taux_croisement else (parent1, parent2)
+
+        if random.random() < taux_mutation:
+            enfant1 = mutation(enfant1, taux_mutation)
+        if random.random() < taux_mutation:
+            enfant2 = mutation(enfant2, taux_mutation)
+
+        nouvelle_population.append(enfant1)
+        if len(nouvelle_population) < taille_population:
+            nouvelle_population.append(enfant2)
+    return nouvelle_population[:taille_population]
+
+
+def evolution(population: list[Graphe], nb_generations: int, taux_croisement: float, taux_mutation: float,
+              nb_elites: int, methode_croisement, output_map_file: str = None, show_plot_each_gen: bool = False) -> Graphe:
+    """Exécute l’évolution principale de l’algorithme génétique."""
     taille_population = len(population)
-    meilleur_fitness_prec = None
-    meilleur_chemin_prec = None
     start_time = time.time()
+    meilleur_fitness_prec, meilleur_chemin_prec = None, None
+
     for g in range(nb_generations):
-        # Évaluation
         fitnesses = [fitness(ind) for ind in population]
-        meilleur_index = fitnesses.index(min(fitnesses))
-        meilleur = population[meilleur_index]
-        # Construction du chemin du meilleur
-        chemin_ids = []
-        courant = meilleur
-        while True:
-            chemin_ids.append(str(courant.ville.id))
-            courant = courant.next
-            if courant == meilleur:
-                break
-        meilleur_fitness = min(fitnesses)
-        current_time = time.time() - start_time
-        # Affichage seulement si le meilleur change
+        meilleur, meilleur_fitness, chemin_ids = calculer_meilleur(population, fitnesses)
+
         if meilleur_fitness != meilleur_fitness_prec or chemin_ids != meilleur_chemin_prec:
-            print(f"Génération {g+1}/{nb_generations} | Meilleur: {meilleur_fitness:.2f} | Temps: {current_time:.2f}s | Chemin: {' -> '.join(chemin_ids)}")
+            afficher_statut_generation(g, nb_generations, meilleur_fitness, chemin_ids, start_time)
             if show_plot_each_gen and output_map_file:
                 export_map_json(meilleur, output_map_file)
                 afficher_chemin_json(output_map_file, show_plot=True)
-            meilleur_fitness_prec = meilleur_fitness
-            meilleur_chemin_prec = list(chemin_ids)
-        nouvelle_population = []
-        # Élitisme
-        elites = selection_elites(population, fitnesses, nb_elites)
-        nouvelle_population.extend(elites)
-        # Génération des nouveaux individus
-        while len(nouvelle_population) < taille_population:
-            parent1 = selection_tournoi(population, fitnesses)
-            parent2 = selection_tournoi(population, fitnesses)
-            if random.random() < taux_croisement:
-                enfant1 = methode_croisement(parent1, parent2)
-                enfant2 = methode_croisement(parent2, parent1)
-            else:
-                enfant1 = parent1
-                enfant2 = parent2
-            if random.random() < taux_mutation:
-                enfant1 = mutation(enfant1, taux_mutation)
-            if random.random() < taux_mutation:
-                enfant2 = mutation(enfant2, taux_mutation)
-            nouvelle_population.append(enfant1)
-            if len(nouvelle_population) < taille_population:
-                nouvelle_population.append(enfant2)
-        population = nouvelle_population[:taille_population]
-    # Dernière évaluation
+            meilleur_fitness_prec, meilleur_chemin_prec = meilleur_fitness, list(chemin_ids)
+
+        population = generer_nouvelle_population(population, fitnesses, nb_elites, taux_croisement, taux_mutation, methode_croisement, taille_population)
+
     fitnesses = [fitness(ind) for ind in population]
-    meilleur_index = fitnesses.index(min(fitnesses))
-    meilleur = population[meilleur_index]
+    meilleur, _, _ = calculer_meilleur(population, fitnesses)
     total_time = time.time() - start_time
-    # Export map si demandé
+
     if output_map_file:
         export_map_json(meilleur, output_map_file)
     print(f"\nTemps total d'exécution : {total_time:.2f} secondes")
