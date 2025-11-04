@@ -1,4 +1,4 @@
-from coordonnees import *
+from model.coordonnees import *
 
 
 class Ville:
